@@ -1,0 +1,45 @@
+.social--outer {
+  background-color: #2c4886;
+}
+.social--box {
+  max-width: 1050px !important;
+}
+.socials {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.socials p {
+  color: #fff;
+  margin: 0.5rem 0;
+}
+.socials > * {
+  margin-left: 1.25rem;
+}
+.logo--outer {
+  background-color: #395697;
+}
+.logo--box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.hacker--logo {
+  max-width: 500px;
+  max-height: 70px;
+}
+.sub--btn {
+  background-color: #ffdb4d;
+  color: #4a380e;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border: none !important;
+}
+.sub--btn:hover {
+  background-color: #ffdb4d;
+  color: #4a380e;
+}
+.btn--icon {
+  margin-right: 4px;
+}
