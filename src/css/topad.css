@@ -1,0 +1,10 @@
+.top--ad--img {
+  margin: 0 auto;
+}
+.top--ad {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0fb;
+  padding: 2rem 0;
+  border-top: 4px solid #dddde7;
+}

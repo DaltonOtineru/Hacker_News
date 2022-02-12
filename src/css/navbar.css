@@ -1,0 +1,28 @@
+.nav {
+  padding-bottom: 0;
+}
+.nav--box {
+  max-width: 1096px !important;
+  margin: 0 auto;
+}
+.nav--links {
+  list-style-type: none;
+}
+.nav--item {
+  padding: 0 15px;
+  border-bottom: 4px solid transparent;
+}
+.nav--item:hover {
+  border-bottom: 4px solid #2c4886;
+}
+.nav--item--link {
+  color: #585858 !important;
+  font-weight: 400;
+}
+.icon--box {
+  display: inline-block;
+}
+
+.nav--icon {
+  padding: 0 15px;
+}

@@ -2,7 +2,7 @@
   background-color: #2c4886;
 }
 .social--box {
-  max-width: 1050px !important;
+  max-width: 1120px;
 }
 .socials {
   display: flex;
@@ -19,9 +19,12 @@
 .logo--outer {
   background-color: #395697;
 }
+.logo--bg {
+  max-width: 1120px;
+}
 .logo--box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
 }
