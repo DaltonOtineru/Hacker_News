@@ -1,0 +1,28 @@
+.newsletter--outer--block {
+  border: 10px solid #2c4886;
+  background: #395697;
+}
+
+.newsletter--inner--block {
+  max-width: 1096px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newsletter--inner--content {
+  padding: 1.5rem;
+  max-width: 550px;
+  margin: 0 auto;
+  color: #fff;
+}
+.informed {
+  font-size: 25px;
+}
+.sign--up {
+  padding: 1rem 0;
+  font-weight: 300;
+  font-size: 15px;
+}
+.form--control {
+  padding: 12px 70px 12px 20px;
+}

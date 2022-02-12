@@ -1,0 +1,21 @@
+.footer--socials--inner {
+  max-width: 1096px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.follow {
+  text-align: center;
+  padding: 2rem 0;
+}
+.social--icons--box {
+  display: flex;
+  justify-content: space-between;
+}
+.social--icon {
+  text-align: center;
+}
+.icon {
+  font-size: 50px;
+}

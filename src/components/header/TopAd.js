@@ -6,7 +6,9 @@ import '../../css/topad.css';
 const TopAd = () => {
   return (
     <div className="top--ad">
-      <img src={headerAd} alt="advertisement" className="top--ad--img" />
+      <a href="/">
+        <img src={headerAd} alt="advertisement" className="top--ad--img" />
+      </a>
     </div>
   );
 };
