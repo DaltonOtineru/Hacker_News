@@ -17,6 +17,7 @@
 }
 .main--news--article {
   display: flex;
+  margin: 2rem 0;
 }
 .main--article--info {
   padding-left: 20px;
@@ -24,13 +25,50 @@
 .main--article--title {
   font-size: 20px;
   color: #333333;
+  font-weight: 900;
 }
 .main--date--author {
   display: flex;
   font-size: 13px;
   color: #555555;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: baseline;
+  margin-left: 2px;
+}
+.main--date--published {
+  margin-right: 1rem;
+}
+.calendar--icon {
+  margin: 0 3px 3px 0;
 }
 .main--article--description {
   font-size: 15px;
   color: #444444;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+.next--page--link--box {
+  display: flex;
+  justify-content: end;
+}
+.next--page--button {
+  background: #395697;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  padding: 10px 16px;
+  font-weight: 300;
+}
+.next--page--button:hover {
+  background: #395697;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-1px);
+}
+.next--page--icon {
+  font-size: 1.5rem;
+  font-weight: 500;
 }

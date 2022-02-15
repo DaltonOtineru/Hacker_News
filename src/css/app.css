@@ -1,0 +1,9 @@
+::-moz-selection {
+  background: #ffdb4d;
+}
+::-webkit-selection {
+  background: #ffdb4d;
+}
+::selection {
+  background: #ffdb4d;
+}

@@ -32,7 +32,7 @@
 }
 .input--group .btn-primary {
   background-color: #00ace5 !important;
-  border-color: none;
+  border-color: none !important;
 }
 .input--group .btn-primary:hover {
   border: none;

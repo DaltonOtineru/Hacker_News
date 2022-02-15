@@ -1,3 +1,17 @@
+.side--news--box {
+  max-width: 300px;
+}
+.side--top--ad1 {
+  margin: 1.5rem 0 0.75rem 0;
+  width: 100%;
+  height: auto;
+}
+.side--top--ad2 {
+  margin: 0.75rem 0 2rem 0;
+  width: 100%;
+  height: auto;
+}
+
 .news--article--anchor {
   display: flex;
   text-decoration: none;
@@ -7,8 +21,10 @@
 }
 .side--news--title {
   font-size: 23px;
-  border-bottom: 3px solid #000;
+  border-bottom: 4px solid #333;
   max-width: 196px;
+  font-weight: 900;
+  color: #2b2d41;
 }
 .side--news--img {
   height: 80px;
@@ -20,4 +36,9 @@
   color: #444444;
   text-decoration: none;
   padding-left: 1rem;
+}
+.side--bottotm--ad {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  height: auto;
 }

@@ -13,8 +13,8 @@ const MainNewsFeed = () => {
     const getArticles = async () => {
       const response = await Axios.get(allNews, {
         params: {
-          pageSize: 4,
-          q: 'cyber security',
+          pageSize: 9,
+          q: 'news',
         },
       });
       setArticles(response.data.articles);
