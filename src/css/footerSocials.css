@@ -1,0 +1,71 @@
+.footer--socials--inner {
+  max-width: 1096px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.follow--us--box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.follow {
+  text-align: center;
+  margin: 2rem 0;
+  border-bottom: 4px solid #ffdb4d;
+}
+.social--icons--box {
+  display: flex;
+  justify-content: space-around;
+}
+.social--icon {
+  text-align: center;
+}
+.social--icon a {
+  text-decoration: none;
+}
+.icon {
+  font-size: 50px;
+  transition: transform 0.2s;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer--twitter {
+  color: #1da1f2;
+}
+.footer--facebook {
+  color: #4267b2;
+}
+.footer--linkedin {
+  color: #007bb6;
+}
+.footer--youtube {
+  color: #ce332d;
+}
+.footer--instagram {
+  color: #e6683c;
+}
+
+.follower--count {
+  color: #555555;
+  padding-top: 1rem;
+  font-size: 14.4px;
+  font-weight: 300;
+}
+/* background-size: 100%;
+-webkit-background-clip: text;
+background-clip: text;
+-moz-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-text-fill-color: transparent;
+background: -webkit-linear-gradient(
+  45deg,
+  #f09433 0,
+  #e6683c 25%,
+  #dc2743 50%,
+  #cc2366 75%,
+  #bc1888 100%
+); */

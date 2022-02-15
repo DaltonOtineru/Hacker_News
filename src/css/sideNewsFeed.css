@@ -1,0 +1,23 @@
+.news--article--anchor {
+  display: flex;
+  text-decoration: none;
+}
+.side--news--article {
+  padding-bottom: 1rem;
+}
+.side--news--title {
+  font-size: 23px;
+  border-bottom: 3px solid #000;
+  max-width: 196px;
+}
+.side--news--img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.side--article--description {
+  color: #444444;
+  text-decoration: none;
+  padding-left: 1rem;
+}

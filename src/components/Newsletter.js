@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/newsletter.css';
-
+import { BsFillArrowRightSquareFill } from 'react-icons/bs';
 import React from 'react';
 import { FormControl, InputGroup, Button, Container } from 'react-bootstrap';
 
@@ -19,7 +19,9 @@ const Newsletter = () => {
               placeholder="Enter your email address"
               className="form--control"
             />
-            <Button variant="primary"> + </Button>
+            <Button className="newsletter--buton">
+              <BsFillArrowRightSquareFill className="newsletter--button--icon" />
+            </Button>
           </InputGroup>
         </div>
       </Container>

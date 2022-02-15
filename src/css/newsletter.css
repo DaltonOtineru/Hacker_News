@@ -26,3 +26,15 @@
 .form--control {
   padding: 12px 70px 12px 20px;
 }
+.newsletter--button--icon {
+  width: 50px;
+  height: 30px;
+}
+.input--group .btn-primary {
+  background-color: #00ace5 !important;
+  border-color: none;
+}
+.input--group .btn-primary:hover {
+  border: none;
+  background-color: #00ace5 !important;
+}

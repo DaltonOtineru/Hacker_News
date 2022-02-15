@@ -1,8 +1,7 @@
 .total--news--box {
   max-width: 1096px !important;
-  overflow: hidden;
 }
 
 .total--news--inner {
-  max-width: 500px;
+  max-width: 100%;
 }

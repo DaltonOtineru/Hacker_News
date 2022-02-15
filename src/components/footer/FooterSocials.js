@@ -11,27 +11,39 @@ const FooterSocials = () => {
   return (
     <div className="footer-socials--outer">
       <Container className="footer--socials--inner">
-        <h6 className="follow">Follow Us</h6>
+        <div className="follow--us--box">
+          <h6 className="follow">Follow Us</h6>
+        </div>
         <div className="social--icons--box">
           <div className="social--icon">
-            <FaTwitterSquare className="icon" />
-            <p className="follower--count">780,100 Followers</p>
+            <a href="https://twitter.com/thehackersnews">
+              <FaTwitterSquare className="icon footer--twitter" />
+              <p className="follower--count">780,100 Followers</p>
+            </a>
           </div>
           <div className="social--icon">
-            <ImFacebook2 className="icon" />
-            <p className="follower--count">1,985,000 Followers</p>
+            <a href="https://www.facebook.com/thehackernews">
+              <ImFacebook2 className="icon footer--facebook" />
+              <p className="follower--count">1,985,000 Followers</p>
+            </a>
           </div>
           <div className="social--icon">
-            <BsLinkedin className="icon" />
-            <p className="follower--count">301,500 Followers</p>
+            <a href="https://www.linkedin.com/company/thehackernews/">
+              <BsLinkedin className="icon footer--linkedin" />
+              <p className="follower--count">301,500 Followers</p>
+            </a>
           </div>
           <div className="social--icon">
-            <IoLogoYoutube className="icon" />
-            <p className="follower--count">19,500 Followers</p>
+            <a href="https://www.youtube.com/c/thehackernews?sub_confirmation=1">
+              <IoLogoYoutube className="icon footer--youtube" />
+              <p className="follower--count">19,500 Followers</p>
+            </a>
           </div>
           <div className="social--icon">
-            <FaInstagramSquare className="icon" />
-            <p className="follower--count">125,500 Followers</p>
+            <a href="https://www.instagram.com/thehackernews/">
+              <FaInstagramSquare className="icon footer--instagram" />
+              <p className="follower--count">125,500 Followers</p>
+            </a>
           </div>
         </div>
       </Container>
