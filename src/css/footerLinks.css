@@ -59,6 +59,7 @@
   width: 265px;
   text-align: left;
   transition: transform 0.2s;
+  vertical-align: baseline;
 }
 .footer--button:hover {
   background-color: #eee;
@@ -67,7 +68,7 @@
   transform: scale(1.1);
 }
 .button--icon {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 /* BUTTONS */

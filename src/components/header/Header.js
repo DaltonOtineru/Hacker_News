@@ -22,7 +22,7 @@ const Header = ({
   defaultSearchTerm,
   changeDefaultSearchTerm,
 }) => {
-  const iconStyle = { color: 'white', fontSize: '14px' };
+  const iconStyle = { color: 'white', fontSize: '16px' };
 
   return (
     <>
@@ -30,11 +30,21 @@ const Header = ({
         <Container className="social--box">
           <div className="socials">
             <p>Follow us</p>
-            <FaFacebookF style={iconStyle} />
-            <AiOutlineTwitter style={iconStyle} />
-            <FaLinkedinIn style={iconStyle} />
-            <BsYoutube style={iconStyle} />
-            <MdRssFeed style={iconStyle} />
+            <a href="https://www.facebook.com/thehackernews">
+              <FaFacebookF style={iconStyle} />
+            </a>
+            <a href="https://twitter.com/thehackersnews">
+              <AiOutlineTwitter style={iconStyle} />
+            </a>
+            <a href="https://www.linkedin.com/company/thehackernews/">
+              <FaLinkedinIn style={iconStyle} />
+            </a>
+            <a href="https://www.youtube.com/c/thehackernews?sub_confirmation=1">
+              <BsYoutube style={iconStyle} />
+            </a>
+            <a href="https://feeds.feedburner.com/TheHackersNews">
+              <MdRssFeed style={iconStyle} />
+            </a>
           </div>
         </Container>
       </div>
