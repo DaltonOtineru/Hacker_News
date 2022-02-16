@@ -1,0 +1,30 @@
+.online--courses--wrapper {
+  max-width: 1096px;
+  padding: 30px 0;
+}
+.online--courses--header {
+  border-bottom: 4px solid #333;
+  max-width: 301px;
+  font-size: 23px;
+  font-weight: 900;
+}
+.online--courses--anchor {
+  text-decoration: none;
+}
+.online--course--title {
+  color: #333333;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.online--course--description {
+  color: #555555;
+  font-size: 14.4px;
+}
+.course--image {
+  border-radius: 3px;
+}
+.online--courses--item:hover {
+  max-width: 253px;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}

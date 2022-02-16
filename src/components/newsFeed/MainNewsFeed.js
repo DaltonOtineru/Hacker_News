@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import MainNewsItem from './MainNewsItem';
+import NewsFeed from './NewsFeed';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const MainNewsFeed = () => {
+const MainNewsFeed = ({
+  searchTerm,
+  setSearchTerm,
+  defaultSearchTerm,
+  changeDefaultSearchTerm,
+}) => {
   const [articles, setArticles] = useState([]);
+
   const allNews =
     'https://newsapi.org/v2/everything/?apiKey=c5e77d61a1324228b832fdfa9c021248';
 
@@ -14,13 +21,14 @@ const MainNewsFeed = () => {
       const response = await Axios.get(allNews, {
         params: {
           pageSize: 9,
-          q: 'news',
+          q: defaultSearchTerm,
         },
       });
       setArticles(response.data.articles);
+      console.log(defaultSearchTerm);
     };
     getArticles();
-  }, []);
+  }, [defaultSearchTerm]);
 
   return (
     <>
@@ -33,6 +41,7 @@ const MainNewsFeed = () => {
             urlToImage={urlToImage}
             author={author}
             publishedAt={publishedAt}
+            // key={title}
           />
         )
       )}

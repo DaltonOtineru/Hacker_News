@@ -32,6 +32,7 @@
 .form--container {
   max-width: 1096px;
   padding: 1rem 0;
+  transform: 0.3s ease-in-out;
 }
 .search--input {
   border-radius: 0;

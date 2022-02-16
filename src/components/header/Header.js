@@ -15,7 +15,13 @@ import { MdRssFeed } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
 import hackerNews from '../../img/hackerNews.png';
 
-const Header = () => {
+const Header = ({
+  setSearchTerm,
+  searchTerm,
+  onSearchTermChange,
+  defaultSearchTerm,
+  changeDefaultSearchTerm,
+}) => {
   const iconStyle = { color: 'white', fontSize: '14px' };
 
   return (
@@ -51,7 +57,13 @@ const Header = () => {
           </div>
         </Container>
       </div>
-      <Navigation />
+      <Navigation
+        onSearchTermChange={onSearchTermChange}
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        defaultSearchTerm={defaultSearchTerm}
+        changeDefaultSearchTerm={changeDefaultSearchTerm}
+      />
       <TopAd />
     </>
   );

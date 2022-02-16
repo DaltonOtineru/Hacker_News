@@ -25,7 +25,6 @@ export const SideNewsFeed = () => {
     getArticles();
   }, []);
 
-  console.log(articles);
   return articles.map(({ title, urlToImage, url, description }) => (
     <>
       <SideNewsItem
@@ -33,6 +32,7 @@ export const SideNewsFeed = () => {
         urlToImage={urlToImage}
         url={url}
         description={description}
+        // key={index}
       />
     </>
   ));

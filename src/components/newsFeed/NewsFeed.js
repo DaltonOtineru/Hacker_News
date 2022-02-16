@@ -10,15 +10,27 @@ import '../../css/mainNewsFeed.css';
 
 import sideNewsAd1 from '../../img/sideNewsAd1.jpeg';
 import sideNewsAd2 from '../../img/sideNewsAd2.png';
+import notionAd from '../../img/notionAd.png';
 
 import { IoIosArrowForward } from 'react-icons/io';
 
-const NewsFeed = () => {
+const NewsFeed = ({
+  searchTerm,
+  setSearchTerm,
+  defaultSearchTerm,
+  changeDefaultSearchTerm,
+}) => {
   return (
     <Container className="total--news--box">
       <Row className="total--news--inner">
         <Col sm={12} lg={8} className="main--news--box">
-          <MainNewsFeed className="main--news--feed" />
+          <MainNewsFeed
+            className="main--news--feed"
+            searchTerm={searchTerm}
+            setSearchTerm={setSearchTerm}
+            defaultSearchTerm={defaultSearchTerm}
+            changeDefaultSearchTerm={changeDefaultSearchTerm}
+          />
           <div className="next--page--link--box">
             <Link to="/" className="next--page--link">
               <Button className="next--page--button">
@@ -31,7 +43,7 @@ const NewsFeed = () => {
         <Col sm={12} lg={4} className="side--news--box">
           <div className="side--news--top--ads">
             <img
-              src={sideNewsAd1}
+              src={notionAd}
               alt="advertisement"
               className="side--top--ad1"
             />

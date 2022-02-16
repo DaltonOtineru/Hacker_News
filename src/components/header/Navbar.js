@@ -8,9 +8,13 @@ import { Container, Navbar, Nav, Form } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-const Navigation = () => {
+const Navigation = ({
+  onSearchTermChange,
+  searchTerm,
+  defaultSearchTerm,
+  changeDefaultSearchTerm,
+}) => {
   const [searchBarVisible, toggleSearchBarVisible] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
 
   const iconStyle = { fontSize: '20px' };
 
@@ -18,9 +22,10 @@ const Navigation = () => {
     return toggleSearchBarVisible(!searchBarVisible);
   };
 
-  const onSearchTermChange = (event) => {
-    setSearchTerm(event.target.value);
-    console.log(searchTerm);
+  const onSearchSubmit = (event) => {
+    event.preventDefault();
+    changeDefaultSearchTerm(searchTerm);
+    console.log(defaultSearchTerm);
   };
 
   return (
@@ -83,7 +88,7 @@ const Navigation = () => {
           className="form--container"
           style={searchBarVisible ? { display: 'block' } : { display: 'none' }}
         >
-          <Form>
+          <Form onSubmit={() => onSearchSubmit()}>
             <Form.Control
               type="text"
               placeholder="Search Here..."

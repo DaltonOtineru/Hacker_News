@@ -3,7 +3,6 @@ import SideNewsFeed from './SideNewsFeed';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SideNewsItem = ({ urlToImage, url, title, description }) => {
-  console.log('foo bar bitch');
   return (
     <div className="side--news--article">
       <a href={url} className="news--article--anchor">
