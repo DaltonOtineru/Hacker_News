@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/font.css';
 import '../css/app.css';
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Header from './header/Header';
 import NewsFeed from './newsFeed/NewsFeed';
@@ -38,10 +38,24 @@ const App = () => {
         defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
       />
+      {/* <Routes>
+        <Route
+          exact
+          path="/"
+          component={NewsFeed}
+          render={(props) => (
+            <NewsFeed
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              defaultSearchTerm={defaultSearchTerm}
+              changeDefaultSearchTerm={changeDefaultSearchTerm}
+            />
+          )}
+        />
+      </Routes> */}
       <OnlineCourses />
       <Newsletter />
       <Footer />
-      <Routes></Routes>
     </Router>
   );
 };

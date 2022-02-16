@@ -25,7 +25,6 @@ const Navigation = ({
   const onSearchSubmit = (event) => {
     event.preventDefault();
     changeDefaultSearchTerm(searchTerm);
-    console.log(defaultSearchTerm);
   };
 
   return (

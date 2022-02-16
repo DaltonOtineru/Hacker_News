@@ -59,7 +59,6 @@
   width: 265px;
   text-align: left;
   transition: transform 0.2s;
-  vertical-align: baseline;
 }
 .footer--button:hover {
   background-color: #eee;
