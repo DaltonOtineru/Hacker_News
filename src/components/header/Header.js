@@ -21,6 +21,9 @@ const Header = ({
   onSearchTermChange,
   defaultSearchTerm,
   changeDefaultSearchTerm,
+  modalIsOpen,
+  setModalOpen,
+  closeModal,
 }) => {
   const iconStyle = { color: 'white', fontSize: '16px' };
 
@@ -73,6 +76,9 @@ const Header = ({
         setSearchTerm={setSearchTerm}
         defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
+        modalIsOpen={modalIsOpen}
+        setModalOpen={setModalOpen}
+        closeModal={closeModal}
       />
       <TopAd />
     </>

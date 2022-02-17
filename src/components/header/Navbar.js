@@ -13,6 +13,9 @@ const Navigation = ({
   searchTerm,
   defaultSearchTerm,
   changeDefaultSearchTerm,
+  modalIsOpen,
+  setModalOpen,
+  closeModal,
 }) => {
   const [searchBarVisible, toggleSearchBarVisible] = useState(false);
 
@@ -76,7 +79,10 @@ const Navigation = ({
             </Nav.Item>
             <Nav.Item as="li" className="nav--icon">
               <Nav.Link as={Link} to="/">
-                <GiHamburgerMenu style={iconStyle} />
+                <GiHamburgerMenu
+                  style={iconStyle}
+                  onClick={() => closeModal()}
+                />
               </Nav.Link>
             </Nav.Item>
           </Nav>

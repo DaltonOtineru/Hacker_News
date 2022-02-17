@@ -26,7 +26,6 @@ const MainNewsFeed = ({
       });
       setArticles(response.data.articles);
       changeDefaultSearchTerm(searchTerm);
-      console.log(defaultSearchTerm);
     };
     getArticles();
   }, [defaultSearchTerm]);

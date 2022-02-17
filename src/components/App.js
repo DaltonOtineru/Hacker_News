@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import Header from './header/Header';
 import NewsFeed from './newsFeed/NewsFeed';
+import ModalOverlay from './header/ModalOverlay';
 import OnlineCourses from './OnlineCourses';
 import Newsletter from './Newsletter';
 import Footer from './footer/Footer';
@@ -13,10 +14,27 @@ import Footer from './footer/Footer';
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [defaultSearchTerm, changeDefaultSearchTerm] = useState('california');
+  const [modalIsOpen, setModalOpen] = useState(false);
+  console.log(modalIsOpen);
 
   const onSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
     console.log(defaultSearchTerm);
+  };
+
+  const showModal = () => {
+    if (modalIsOpen === true) {
+      return (
+        <ModalOverlay style={{ display: 'block' }} closeModal={closeModal} />
+      );
+    }
+    if (modalIsOpen === false) {
+      return null;
+    }
+  };
+
+  const closeModal = () => {
+    return setModalOpen(!modalIsOpen);
   };
 
   useEffect(() => {
@@ -31,28 +49,19 @@ const App = () => {
         setSearchTerm={setSearchTerm}
         defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
+        modalIsOpen={modalIsOpen}
+        setModalOpen={setModalOpen}
+        closeModal={closeModal}
       />
+      {showModal()}
+
       <NewsFeed
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
       />
-      {/* <Routes>
-        <Route
-          exact
-          path="/"
-          component={NewsFeed}
-          render={(props) => (
-            <NewsFeed
-              searchTerm={searchTerm}
-              setSearchTerm={setSearchTerm}
-              defaultSearchTerm={defaultSearchTerm}
-              changeDefaultSearchTerm={changeDefaultSearchTerm}
-            />
-          )}
-        />
-      </Routes> */}
+      <Routes></Routes>
       <OnlineCourses />
       <Newsletter />
       <Footer />
