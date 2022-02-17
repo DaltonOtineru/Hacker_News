@@ -22,13 +22,13 @@ const OnlineCourses = () => {
 
   return (
     <Container className="online--courses--wrapper">
-      <Row className="online--courses--row">
+      <Row className="online--courses--row gx-0 gy-0">
         <div className="online--courses--header--box">
           <h3 className="online--courses--header">
             Online Courses and Software
           </h3>
         </div>
-        <Col xs={12} md={6} lg={3} className="online--courses-col">
+        <Col xs={6} md={6} lg={3} className="online--courses--col">
           <a
             href={hackingHref}
             target="_blank"
@@ -48,7 +48,7 @@ const OnlineCourses = () => {
             </div>
           </a>
         </Col>
-        <Col xs={12} md={6} lg={3} className="online--courses-col">
+        <Col xs={6} md={6} lg={3} className="online--courses--col">
           <a href={itHref} target="_blank" className="online--courses--anchor">
             <div className="online--courses--item">
               <img
@@ -66,7 +66,7 @@ const OnlineCourses = () => {
             </div>
           </a>
         </Col>
-        <Col xs={12} md={6} lg={3} className="online--courses-col">
+        <Col xs={6} md={6} lg={3} className="online--courses--col">
           <a
             href={passwordHref}
             target="_blank"
@@ -88,7 +88,7 @@ const OnlineCourses = () => {
             </div>
           </a>
         </Col>
-        <Col xs={12} md={6} lg={3} className="online--courses-col">
+        <Col xs={6} md={6} lg={3} className="online--courses--col">
           <a href={awsHref} target="_blank" className="online--courses--anchor">
             <div className="online--courses--item">
               <img

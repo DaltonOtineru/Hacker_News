@@ -8,3 +8,12 @@
   padding: 2rem 0;
   border-top: 4px solid #dddde7;
 }
+
+@media (max-width: 912px) {
+}
+
+@media (max-width: 600px) {
+  .top--ad--img {
+    background-image: url('../img/headerAdvertMobile.JPG');
+  }
+}

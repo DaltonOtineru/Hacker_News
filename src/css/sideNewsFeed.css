@@ -42,3 +42,9 @@
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 912px) {
+  .side--news--box {
+    display: none;
+  }
+}

@@ -15,16 +15,13 @@ import { GrMail } from 'react-icons/gr';
 import { CgClose } from 'react-icons/cg';
 import { MdRssFeed } from 'react-icons/md';
 
-const ModalOverlay = ({ closeModal }) => {
+const ModalOverlay = ({ toggleModal }) => {
   return (
     <div className="modal--overlay">
+      <div className="modal--close">
+        <CgClose className="modal--close--icon" onClick={() => toggleModal()} />
+      </div>
       <div className="modal--content">
-        <div className="modal--close">
-          <CgClose
-            className="modal--close--icon"
-            onClick={() => closeModal()}
-          />
-        </div>
         <div className="modal--top--links--section">
           <div className="modal--resources--section">
             <h5 className="modal--link--title">Resources</h5>
@@ -84,34 +81,34 @@ const ModalOverlay = ({ closeModal }) => {
             <div className="modal--socials--title">
               <h5>Follow Us On Social Media</h5>
             </div>
-            <a href="">
+            <a href="https://www.facebook.com/thehackernews">
               <FaFacebookF className="modal--social--icon" />
             </a>
-            <a href="">
+            <a href="https://twitter.com/thehackersnews">
               <AiOutlineTwitter className="modal--social--icon" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/company/thehackernews/">
               <FaLinkedinIn className="modal--social--icon" />
             </a>
-            <a href="">
+            <a href="https://www.youtube.com/c/thehackernews?sub_confirmation=1">
               <BsYoutube className="modal--social--icon" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/thehackernews/">
               <FaInstagramSquare className="modal--social--icon" />
             </a>
           </div>
           <div className="modal--buttons">
-            <a href="/">
+            <a href="https://feeds.feedburner.com/TheHackersNews">
               <button type="button" className="modal--button">
                 <MdRssFeed className="button--icon" /> RSS Feeds
               </button>
             </a>
-            <a href="/">
+            <a href="https://thehackernews.com/#email-outer">
               <button type="button" className="modal--button">
                 <FaBell className="button--icon" /> Email Alerts
               </button>
             </a>
-            <a href="/">
+            <a href="https://t.me/joinchat/AAAAADwuDObFWF60CiR-HQ">
               <button type="button" className="modal--button">
                 <FaTelegram className="button--icon" /> Telegram Channel
               </button>

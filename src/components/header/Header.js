@@ -23,7 +23,7 @@ const Header = ({
   changeDefaultSearchTerm,
   modalIsOpen,
   setModalOpen,
-  closeModal,
+  toggleModal,
 }) => {
   const iconStyle = { color: 'white', fontSize: '16px' };
 
@@ -59,6 +59,7 @@ const Header = ({
                 className="hacker--logo"
                 alt="Hacker News Logo"
                 src={hackerNews}
+                className="headerImg"
               />
             </a>
             <a>
@@ -78,7 +79,7 @@ const Header = ({
         changeDefaultSearchTerm={changeDefaultSearchTerm}
         modalIsOpen={modalIsOpen}
         setModalOpen={setModalOpen}
-        closeModal={closeModal}
+        toggleModal={toggleModal}
       />
       <TopAd />
     </>

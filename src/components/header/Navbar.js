@@ -15,7 +15,7 @@ const Navigation = ({
   changeDefaultSearchTerm,
   modalIsOpen,
   setModalOpen,
-  closeModal,
+  toggleModal,
 }) => {
   const [searchBarVisible, toggleSearchBarVisible] = useState(false);
 
@@ -41,22 +41,38 @@ const Navigation = ({
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" className="nav--item">
-              <Nav.Link as={Link} to="/" className="nav--item--link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                className="nav--item--link mobile--hidden"
+              >
                 Data Breaches
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" className="nav--item">
-              <Nav.Link as={Link} to="/" className="nav--item--link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                className="nav--item--link mobile--hidden"
+              >
                 Cyber Attacks
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" className="nav--item">
-              <Nav.Link as={Link} to="/" className="nav--item--link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                className="nav--item--link mobile--hidden"
+              >
                 Vulnerabilities
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" className="nav--item">
-              <Nav.Link as={Link} to="/" className="nav--item--link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                className="nav--item--link mobile--hidden"
+              >
                 Malware
               </Nav.Link>
             </Nav.Item>
@@ -66,7 +82,11 @@ const Navigation = ({
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li" className="nav--item">
-              <Nav.Link as={Link} to="/" className="nav--item--link">
+              <Nav.Link
+                as={Link}
+                to="/"
+                className="nav--item--link mobile--hidden"
+              >
                 Contact
               </Nav.Link>
             </Nav.Item>
@@ -81,7 +101,7 @@ const Navigation = ({
               <Nav.Link as={Link} to="/">
                 <GiHamburgerMenu
                   style={iconStyle}
-                  onClick={() => closeModal()}
+                  onClick={() => toggleModal()}
                 />
               </Nav.Link>
             </Nav.Item>

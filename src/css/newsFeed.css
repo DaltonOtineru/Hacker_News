@@ -5,3 +5,14 @@
 .total--news--inner {
   max-width: 100%;
 }
+
+@media (max-width: 912px) {
+  .total--news--box {
+    max-width: 720px !important;
+  }
+}
+@media (max-width: 600px) {
+  .total--news--box {
+    width: 100% !important;
+  }
+}

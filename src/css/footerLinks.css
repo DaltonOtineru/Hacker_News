@@ -71,3 +71,30 @@
 }
 
 /* BUTTONS */
+@media (max-width: 912px) {
+  .deals--links {
+    display: none;
+  }
+  .footer--links--col {
+    justify-content: space-evenly;
+    padding-top: 1rem;
+  }
+  .footer--buttons--col {
+    margin-left: -2rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer--links--col {
+    justify-content: center;
+  }
+  .footer--buttons--col {
+    margin-left: 0;
+  }
+  .footer--buttons--col a {
+    width: 100%;
+  }
+
+  .footer--button {
+    width: 100%;
+  }
+}

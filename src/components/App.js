@@ -25,7 +25,7 @@ const App = () => {
   const showModal = () => {
     if (modalIsOpen === true) {
       return (
-        <ModalOverlay style={{ display: 'block' }} closeModal={closeModal} />
+        <ModalOverlay style={{ display: 'block' }} toggleModal={toggleModal} />
       );
     }
     if (modalIsOpen === false) {
@@ -33,7 +33,7 @@ const App = () => {
     }
   };
 
-  const closeModal = () => {
+  const toggleModal = () => {
     return setModalOpen(!modalIsOpen);
   };
 
@@ -51,17 +51,29 @@ const App = () => {
         changeDefaultSearchTerm={changeDefaultSearchTerm}
         modalIsOpen={modalIsOpen}
         setModalOpen={setModalOpen}
-        closeModal={closeModal}
+        toggleModal={toggleModal}
       />
       {showModal()}
 
-      <NewsFeed
+      {/* <NewsFeed
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
-      />
-      <Routes></Routes>
+      /> */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <NewsFeed
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              defaultSearchTerm={defaultSearchTerm}
+              changeDefaultSearchTerm={changeDefaultSearchTerm}
+            />
+          }
+        />
+      </Routes>
       <OnlineCourses />
       <Newsletter />
       <Footer />

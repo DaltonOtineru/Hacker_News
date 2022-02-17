@@ -10,7 +10,7 @@ import '../../css/sideNewsFeed.css';
 export const SideNewsFeed = () => {
   const [articles, setArticles] = useState([]);
   const topNews =
-    'https://newsapi.org/v2/top-headlines/?apiKey=c5e77d61a1324228b832fdfa9c021248';
+    'https://newsapi.org/v2/top-headlines/?apiKey=7f21bc70908c4fd096a6205251e6f4f5';
 
   useEffect(() => {
     const getArticles = async () => {

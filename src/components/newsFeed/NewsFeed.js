@@ -42,25 +42,31 @@ const NewsFeed = ({
         </Col>
         <Col sm={12} lg={4} className="side--news--box">
           <div className="side--news--top--ads">
-            <img
-              src={notionAd}
-              alt="advertisement"
-              className="side--top--ad1"
-            />
-            <img
-              src={sideNewsAd2}
-              alt="advertisement"
-              className="side--top--ad2"
-            />
+            <a href="">
+              <img
+                src={notionAd}
+                alt="advertisement"
+                className="side--top--ad1"
+              />
+            </a>
+            <a href="">
+              <img
+                src={sideNewsAd2}
+                alt="advertisement"
+                className="side--top--ad2"
+              />
+            </a>
           </div>
           <h2 className="side--news--title">Popular This Week</h2>
           <SideNewsFeed className="side--news--feed" />
           <div className="side--news--bottom--ad">
-            <img
-              src={sideNewsAd1}
-              alt="advertisement"
-              className="side--bottotm--ad"
-            />
+            <a href="">
+              <img
+                src={sideNewsAd1}
+                alt="advertisement"
+                className="side--bottotm--ad"
+              />
+            </a>
           </div>
         </Col>
       </Row>

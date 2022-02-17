@@ -26,11 +26,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
-.hacker--logo {
-  max-width: 500px;
-  max-height: 70px;
+.headerImg {
+  max-width: 400px;
+  max-height: 60px;
 }
 .sub--btn {
   background-color: #ffdb4d;
@@ -45,4 +45,49 @@
 }
 .btn--icon {
   margin-right: 4px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 912px) {
+  .social--box {
+    max-width: 100vw;
+  }
+  .logo--box {
+    padding: 1rem 0;
+    justify-content: space-around;
+  }
+  .headerImg {
+    max-width: 50vw;
+  }
+  .sub--btn {
+    font-size: 15px;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .social--box {
+    display: none;
+  }
+  .logo--outer {
+    max-width: 100%;
+  }
+  .logo--bg {
+    max-width: 100vw;
+  }
+  .logo--box {
+    justify-content: center;
+    max-width: 100%;
+  }
+  .hacker--logo {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .headerImg {
+    max-width: 80vw;
+  }
+  .sub--btn {
+    display: none;
+  }
 }

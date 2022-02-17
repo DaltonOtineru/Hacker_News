@@ -38,3 +38,9 @@
   border: none;
   background-color: #00ace5 !important;
 }
+
+@media (max-width: 600px) {
+  .form--control {
+    padding: 0 0 0 5px;
+  }
+}

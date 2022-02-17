@@ -55,17 +55,20 @@
   font-size: 14.4px;
   font-weight: 300;
 }
-/* background-size: 100%;
--webkit-background-clip: text;
-background-clip: text;
--moz-background-clip: text;
--webkit-text-fill-color: transparent;
--moz-text-fill-color: transparent;
-background: -webkit-linear-gradient(
-  45deg,
-  #f09433 0,
-  #e6683c 25%,
-  #dc2743 50%,
-  #cc2366 75%,
-  #bc1888 100%
-); */
+
+@media (max-width: 912px) {
+  .footer--socials--inner {
+    max-width: 720px;
+  }
+}
+@media (max-width: 600px) {
+  .footer--socials--inner {
+    padding-top: 0;
+  }
+  .icon {
+    font-size: 35px;
+  }
+  .follower--count {
+    display: none;
+  }
+}

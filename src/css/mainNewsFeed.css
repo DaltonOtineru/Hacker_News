@@ -72,3 +72,34 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+@media (max-width: 600px) {
+  .total--news--box {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .total--news--inner {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .main--news--article {
+    display: flex;
+    flex-direction: column;
+  }
+  .main--news--img {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+  .main--article--info {
+    padding-left: 10px;
+  }
+  .main--article--title {
+  }
+  .main--date--author {
+    font-size: 12px;
+    margin-left: 0;
+  }
+}

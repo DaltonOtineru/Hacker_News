@@ -23,9 +23,13 @@
   display: flex;
   justify-content: end;
   cursor: pointer;
+  position: relative;
+  top: 2rem;
+  right: 5rem;
+  /* padding: 1rem 1rem 0 0; */
 }
 .modal--close--icon {
-  font-size: 30px;
+  font-size: 40px;
   color: #ffffff;
 }
 .modal--top--links--section {
@@ -49,9 +53,15 @@
   font-weight: 300;
   line-height: 1.7;
 }
+.modal--top--links:hover {
+  color: #c0d2fe;
+  text-decoration: underline;
+}
+
 .modal--contact--title h5 {
   color: #ffffff;
   font-size: 17px;
+  padding-bottom: 1rem;
 }
 .mail--icon--wrap {
   border-radius: 50%;
@@ -62,6 +72,7 @@
   line-height: 50px;
   margin-right: 15px;
 }
+
 .mail--icon--anchor {
   padding-left: 11px;
 }
@@ -74,13 +85,19 @@
   font-weight: 300;
 }
 .contact--content {
-  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.contact--content:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  text-decoration-color: #c0d2fe;
 }
 .modal--socials--title h5 {
   color: #ffffff;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.5px;
+  margin-left: 0.3rem;
 }
 .modal--social--icon {
   color: #fff;
@@ -116,4 +133,28 @@
 .button--icon {
   margin-bottom: 2px;
   font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .modal--content {
+    max-width: 90%;
+    top: 8%;
+    height: 100vh;
+  }
+  .modal--close {
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
+  .contact--content p {
+    font-size: 14px;
+  }
+  .modal--buttons a {
+    text-decoration: none;
+  }
+  .modal--button {
+    display: block;
+    width: 90%;
+    text-decoration: none;
+  }
 }
