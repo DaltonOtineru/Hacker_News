@@ -18,13 +18,9 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import hackerNews from '../../img/hackerNews.png';
 
 const Header = ({
-  setSearchTerm,
   searchTerm,
   onSearchTermChange,
-  defaultSearchTerm,
   changeDefaultSearchTerm,
-  modalIsOpen,
-  setModalOpen,
   toggleModal,
 }) => {
   const iconStyle = { color: 'white', fontSize: '16px' };
@@ -84,11 +80,7 @@ const Header = ({
       <Navigation
         onSearchTermChange={onSearchTermChange}
         searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
-        modalIsOpen={modalIsOpen}
-        setModalOpen={setModalOpen}
         toggleModal={toggleModal}
       />
       <TopAd />

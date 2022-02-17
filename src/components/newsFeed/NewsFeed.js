@@ -16,7 +16,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 
 const NewsFeed = ({
   searchTerm,
-  setSearchTerm,
+
   defaultSearchTerm,
   changeDefaultSearchTerm,
 }) => {
@@ -27,7 +27,6 @@ const NewsFeed = ({
           <MainNewsFeed
             className="main--news--feed"
             searchTerm={searchTerm}
-            setSearchTerm={setSearchTerm}
             defaultSearchTerm={defaultSearchTerm}
             changeDefaultSearchTerm={changeDefaultSearchTerm}
           />

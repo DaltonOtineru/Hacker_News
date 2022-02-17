@@ -14,10 +14,7 @@ import { RiShoppingCart2Fill } from 'react-icons/ri';
 const Navigation = ({
   onSearchTermChange,
   searchTerm,
-  defaultSearchTerm,
   changeDefaultSearchTerm,
-  modalIsOpen,
-  setModalOpen,
   toggleModal,
 }) => {
   const [searchBarVisible, toggleSearchBarVisible] = useState(false);

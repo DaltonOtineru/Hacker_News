@@ -15,7 +15,6 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [defaultSearchTerm, changeDefaultSearchTerm] = useState('california');
   const [modalIsOpen, setModalOpen] = useState(false);
-  console.log(modalIsOpen);
 
   const onSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
@@ -46,21 +45,10 @@ const App = () => {
       <Header
         onSearchTermChange={onSearchTermChange}
         searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        defaultSearchTerm={defaultSearchTerm}
         changeDefaultSearchTerm={changeDefaultSearchTerm}
-        modalIsOpen={modalIsOpen}
-        setModalOpen={setModalOpen}
         toggleModal={toggleModal}
       />
       {showModal()}
-
-      {/* <NewsFeed
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        defaultSearchTerm={defaultSearchTerm}
-        changeDefaultSearchTerm={changeDefaultSearchTerm}
-      /> */}
       <Routes>
         <Route
           path="/"
