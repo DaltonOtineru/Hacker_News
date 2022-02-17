@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './Navbar';
 import TopAd from './TopAd';
 
@@ -13,6 +13,8 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { BsYoutube } from 'react-icons/bs';
 import { MdRssFeed } from 'react-icons/md';
 import { GrMail } from 'react-icons/gr';
+import { FaSearch } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import hackerNews from '../../img/hackerNews.png';
 
 const Header = ({
@@ -62,6 +64,14 @@ const Header = ({
                 className="headerImg"
               />
             </a>
+            <div className="mobile--icon--box">
+              <a href="/" className="mobile--only--icons">
+                <FaSearch />
+              </a>
+              <a href="/" className="mobile--only--icons">
+                <GiHamburgerMenu />
+              </a>
+            </div>
             <a>
               <Button className="sub--btn">
                 <GrMail className="btn--icon" />

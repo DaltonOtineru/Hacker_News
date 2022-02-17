@@ -11,7 +11,14 @@ const TopAd = () => {
         <img
           src={headerAdvertMobile}
           alt="advertisement"
-          className="top--ad--img"
+          className="top--ad--img mobile--ad"
+        />
+      </a>
+      <a href="/">
+        <img
+          src={headerAdvert}
+          alt="advertisement"
+          className="top--ad--img large--ad"
         />
       </a>
     </div>

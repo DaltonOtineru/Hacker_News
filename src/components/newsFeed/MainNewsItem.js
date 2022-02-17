@@ -10,7 +10,7 @@ const NewsItem = ({
   publishedAt,
 }) => {
   return (
-    <a href={url} className="main--news--anchor">
+    <a href={url} target="_blank" className="main--news--anchor">
       <div className="main--news--article">
         <img
           src={urlToImage}

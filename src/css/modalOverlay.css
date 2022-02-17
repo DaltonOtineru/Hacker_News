@@ -158,3 +158,11 @@
     text-decoration: none;
   }
 }
+@media (max-width: 380px) {
+  .modal--content {
+    top: 0;
+  }
+  .modal--socials {
+    padding-bottom: 0;
+  }
+}

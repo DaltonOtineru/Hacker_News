@@ -12,6 +12,12 @@
   margin-right: 30px;
   border-bottom: 4px solid transparent;
 }
+.home--mobile--icon {
+  display: none;
+}
+.mobile--view--only {
+  display: none;
+}
 .nav--item:hover {
   border-bottom: 4px solid #2c4886;
 }
@@ -63,10 +69,43 @@
     max-width: 100vw;
     border-bottom: 2px solid #ffdb4d;
   }
+  .nav--links {
+    /* margin: 0 auto; */
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .nav--item {
+    padding: 0;
+    width: 30%;
+    height: 100%;
+
+    text-align: center;
+  }
+  .nav--item--link {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
   .mobile--hidden {
     display: none;
   }
-  .nav-box .container {
-    justify-content: space-around;
+  .nav--box {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+  .home--mobile--icon {
+    display: inline-block;
+  }
+  .mobile--icons {
+    font-size: 15px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+  }
+  .mobile--view--only {
+    display: inline-block;
+  }
+  .icons--mobile--hidden {
+    display: none;
   }
 }

@@ -19,6 +19,7 @@
 .side--news--article {
   padding-bottom: 1rem;
 }
+
 .side--news--title {
   font-size: 23px;
   border-bottom: 4px solid #333;
@@ -36,6 +37,11 @@
   color: #444444;
   text-decoration: none;
   padding-left: 1rem;
+  text-decoration-color: #2b2d41;
+}
+.side--article--description:hover {
+  text-decoration-color: #2b2d41;
+  text-decoration: underline;
 }
 .side--bottotm--ad {
   margin: 1rem 0 0 0;
