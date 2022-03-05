@@ -24,15 +24,15 @@ export const SideNewsFeed = () => {
     };
     getArticles();
   }, []);
-
-  return articles.map(({ title, urlToImage, url, description }) => (
+  console.log(articles);
+  return articles.map(({ title, urlToImage, url, description, content }) => (
     <>
       <SideNewsItem
         title={title}
         urlToImage={urlToImage}
         url={url}
         description={description}
-        // key={index}
+        key={content}
       />
     </>
   ));

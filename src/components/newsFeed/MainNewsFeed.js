@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MainNewsFeed = ({
   searchTerm,
-
   defaultSearchTerm,
   changeDefaultSearchTerm,
 }) => {
@@ -40,7 +39,7 @@ const MainNewsFeed = ({
             urlToImage={urlToImage}
             author={author}
             publishedAt={publishedAt}
-            // key={title}
+            key={title}
           />
         )
       )}
