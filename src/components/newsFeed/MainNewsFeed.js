@@ -11,8 +11,8 @@ const MainNewsFeed = ({
 }) => {
   const [articles, setArticles] = useState([]);
 
-  const allNews =
-    'https://newsapi.org/v2/everything/?apiKey=7f21bc70908c4fd096a6205251e6f4f5';
+  const apiKey = 'hfe0DWIRg7rLvoG2VPRXlugehH7gG2q2';
+  const allNews = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${defaultSearchTerm}&api-key=${apiKey}`;
 
   useEffect(() => {
     const getArticles = async () => {
@@ -22,7 +22,9 @@ const MainNewsFeed = ({
           q: defaultSearchTerm,
         },
       });
-      setArticles(response.data.articles);
+      setArticles(response.data.response.docs);
+      console.log(response.data.response.docs);
+
       changeDefaultSearchTerm(searchTerm);
     };
     getArticles();
