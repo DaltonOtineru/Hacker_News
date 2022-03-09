@@ -16,36 +16,27 @@ const MainNewsFeed = ({
 
   useEffect(() => {
     const getArticles = async () => {
-      const response = await Axios.get(allNews, {
-        params: {
-          pageSize: 9,
-          q: defaultSearchTerm,
-        },
-      });
+      const response = await Axios.get(allNews);
       setArticles(response.data.response.docs);
-      console.log(response.data.response.docs);
-      // console.log(response.data.response.docs[0].multimedia[19].url);
 
-      changeDefaultSearchTerm(searchTerm);
+      console.log(response.data.response.docs);
+
+      // changeDefaultSearchTerm(searchTerm);
     };
     getArticles();
   }, [defaultSearchTerm]);
 
-  return (
-    <>
-      {articles.map((article) => (
-        <MainNewsItem
-          title={article.headline.main}
-          description={article.snippet}
-          url={article.web_url}
-          urlToImage={article.multimedia[19].url}
-          author={article.byline.original}
-          publishedAt={article.pub_date}
-          key={article._id}
-        />
-      ))}
-    </>
-  );
+  return articles.map((article) => (
+    <MainNewsItem
+      title={article.headline.main}
+      description={article.snippet}
+      url={article.web_url}
+      urlToImage={`http://www.nytimes.com/${article.multimedia[1].url}`}
+      author={article.byline.original}
+      publishedAt={article.pub_date}
+      key={article._id}
+    />
+  ));
 };
 
 export default MainNewsFeed;

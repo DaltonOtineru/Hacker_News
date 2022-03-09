@@ -13,7 +13,7 @@ import Footer from './footer/Footer';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('apple');
+  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('javascript');
   const [modalIsOpen, setModalOpen] = useState(false);
 
   const onSearchTermChange = (event) => {
@@ -37,7 +37,9 @@ const App = () => {
   };
 
   useEffect(() => {
-    changeDefaultSearchTerm(searchTerm);
+    if (searchTerm !== '') {
+      changeDefaultSearchTerm(searchTerm);
+    }
   }, [searchTerm]);
 
   return (

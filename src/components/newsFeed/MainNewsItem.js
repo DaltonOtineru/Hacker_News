@@ -24,7 +24,7 @@ const NewsItem = ({
               <span>
                 <GoCalendar className="calendar--icon" />
               </span>
-              February 15, 20222
+              {publishedAt}
             </p>
             <p className="main--author">
               <span>
