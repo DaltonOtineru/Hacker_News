@@ -13,7 +13,7 @@ import Footer from './footer/Footer';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('california');
+  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('apple');
   const [modalIsOpen, setModalOpen] = useState(false);
 
   const onSearchTermChange = (event) => {

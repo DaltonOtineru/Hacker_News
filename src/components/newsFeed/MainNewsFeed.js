@@ -24,6 +24,7 @@ const MainNewsFeed = ({
       });
       setArticles(response.data.response.docs);
       console.log(response.data.response.docs);
+      // console.log(response.data.response.docs[0].multimedia[19].url);
 
       changeDefaultSearchTerm(searchTerm);
     };
@@ -32,19 +33,17 @@ const MainNewsFeed = ({
 
   return (
     <>
-      {articles.map(
-        ({ title, description, url, urlToImage, author, publishedAt }) => (
-          <MainNewsItem
-            title={title}
-            description={description}
-            url={url}
-            urlToImage={urlToImage}
-            author={author}
-            publishedAt={publishedAt}
-            key={title}
-          />
-        )
-      )}
+      {articles.map((article) => (
+        <MainNewsItem
+          title={article.headline.main}
+          description={article.snippet}
+          url={article.web_url}
+          urlToImage={article.multimedia[19].url}
+          author={article.byline.original}
+          publishedAt={article.pub_date}
+          key={article._id}
+        />
+      ))}
     </>
   );
 };
