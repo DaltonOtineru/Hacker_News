@@ -8,10 +8,10 @@
   text-decoration: none;
 }
 .main--news--img {
-  /* width: 100%;
-    height: auto; */
-  width: 240px;
   height: 160px;
+  width: 290px;
+  /* width: 240px;
+  height: 160px; */
   object-fit: cover;
   border-radius: 3px;
 }
@@ -45,7 +45,7 @@
 .main--article--description {
   font-size: 15px;
   color: #444444;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 6;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;

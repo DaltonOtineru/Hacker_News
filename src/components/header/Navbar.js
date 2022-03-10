@@ -26,7 +26,9 @@ const Navigation = ({
 
   const onSearchSubmit = (event) => {
     event.preventDefault();
-    changeDefaultSearchTerm(searchTerm);
+    if (event.which === 13) {
+      changeDefaultSearchTerm(searchTerm);
+    }
   };
 
   return (

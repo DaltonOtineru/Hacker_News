@@ -17,10 +17,11 @@ const MainNewsFeed = ({
   useEffect(() => {
     const getArticles = async () => {
       const response = await Axios.get(allNews);
-      setArticles(response.data.response.docs);
-
-      console.log(response.data.response.docs);
-
+      const articlesWithMedia = response.data.response.docs.filter(
+        (article) => article.multimedia.length > 34
+      );
+      setArticles(articlesWithMedia);
+      console.log(articlesWithMedia, 'Main news Articles');
       // changeDefaultSearchTerm(searchTerm);
     };
     getArticles();
@@ -31,7 +32,7 @@ const MainNewsFeed = ({
       title={article.headline.main}
       description={article.snippet}
       url={article.web_url}
-      urlToImage={`http://www.nytimes.com/${article.multimedia[1].url}`}
+      urlToImage={`http://www.nytimes.com/${article.multimedia[34]?.url}`}
       author={article.byline.original}
       publishedAt={article.pub_date}
       key={article._id}

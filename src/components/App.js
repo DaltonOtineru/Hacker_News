@@ -13,12 +13,15 @@ import Footer from './footer/Footer';
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('javascript');
+  const [defaultSearchTerm, changeDefaultSearchTerm] = useState('hacker');
   const [modalIsOpen, setModalOpen] = useState(false);
 
   const onSearchTermChange = (event) => {
     setSearchTerm(event.target.value);
     console.log(defaultSearchTerm);
+    setTimeout(() => {
+      changeDefaultSearchTerm(searchTerm);
+    }, 1000);
   };
 
   const showModal = () => {
@@ -36,11 +39,11 @@ const App = () => {
     return setModalOpen(!modalIsOpen);
   };
 
-  useEffect(() => {
-    if (searchTerm !== '') {
-      changeDefaultSearchTerm(searchTerm);
-    }
-  }, [searchTerm]);
+  // useEffect(() => {
+  //   if (searchTerm !== '') {
+  //     changeDefaultSearchTerm(searchTerm);
+  //   }
+  // }, [searchTerm]);
 
   return (
     <Router>

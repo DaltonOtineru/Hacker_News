@@ -21,11 +21,11 @@ export const SideNewsFeed = () => {
     };
     getArticles();
   }, []);
-  console.log(articles);
+  console.log(articles, 'Side News Articles');
   return articles.map((article, index) => (
     <SideNewsItem
       title={article.headline.main}
-      urlToImage={`http://www.nytimes.com/${article.multimedia[0].url}`}
+      urlToImage={`http://www.nytimes.com/${article.multimedia[17].url}`}
       url={article.web_url}
       description={article.snippet}
       key={index}
