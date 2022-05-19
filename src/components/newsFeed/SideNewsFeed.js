@@ -17,7 +17,10 @@ export const SideNewsFeed = () => {
           q: 'basketball',
         },
       });
-      setArticles(response.data.response.docs);
+      const articlesWithMedia = response.data.response.docs.filter(
+        (article) => article.multimedia.length > 17
+      );
+      setArticles(articlesWithMedia);
     };
     getArticles();
   }, []);
@@ -25,7 +28,7 @@ export const SideNewsFeed = () => {
   return articles.map((article, index) => (
     <SideNewsItem
       title={article.headline.main}
-      urlToImage={`http://www.nytimes.com/${article.multimedia[17].url}`}
+      urlToImage={`http://www.nytimes.com/${article.multimedia[17]?.url}`}
       url={article.web_url}
       description={article.snippet}
       key={index}

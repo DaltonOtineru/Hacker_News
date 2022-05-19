@@ -44,6 +44,7 @@
 .search--input {
   border-radius: 0;
   font-size: 12px;
+  outline: none;
 }
 
 /***** MEDIA QUERIES *****/

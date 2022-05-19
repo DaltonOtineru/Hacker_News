@@ -27,6 +27,11 @@ const MainNewsFeed = ({
     getArticles();
   }, [defaultSearchTerm]);
 
+  const current = new Date();
+  const date = `${
+    current.getMonth() + 1
+  }/${current.getDate()}/${current.getFullYear()}`;
+
   return articles.map((article) => (
     <MainNewsItem
       title={article.headline.main}
@@ -34,7 +39,7 @@ const MainNewsFeed = ({
       url={article.web_url}
       urlToImage={`http://www.nytimes.com/${article.multimedia[34]?.url}`}
       author={article.byline.original}
-      publishedAt={article.pub_date}
+      publishedAt={date}
       key={article._id}
     />
   ));
